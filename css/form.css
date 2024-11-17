@@ -1,0 +1,94 @@
+/*============================ พื้นฐาน form =========================================*/
+
+.wrapper .form .input_field {
+  display: flex;
+  /*ทําให้อยู่บรรทัดเดียวกัน*/
+  align-items: center;
+  /*ทําให้อักษรอยู่กึ่งกลาง*/
+  margin-bottom: 15px;
+  /*กําหนดระยะห่างของ เเต่ละ filed*/
+}
+
+.wrapper .form .input_field label {
+  width: 130px;
+  /*กําหนด ความยาวของ laabel หัวข้อของfiled*/
+  color: #7291d6;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: end; /*กําหนด ให้ หัวข้อ label ขยับไปใกล้ field */
+}
+
+
+/* Custom select styling */
+ .input_field .custom_select {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+/*=== กําหนด style field select ทั้งหมด ====*/
+.wrapper .form .input_field .custom_select select {
+  border: 1px solid #ddd;
+  appearance: none;
+  /* Hide default arrow */
+  width: 100%;
+  /* ยืดช่อง field select ให้เต็มจอ*/
+  height: 100%;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  color: #7291d6;
+  /* Text color of the selected option */
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M0 2l5 5 5-5z" fill="%234467bc"/></svg>') no-repeat right 10px center;
+  /* สร้างลูกศร*/
+  background-size: 10px 10px;
+  /* Adjust the size of the arrow */
+}
+/*============================ พื้นฐาน form =========================================*/
+
+
+
+/*============================ สร้าง form สอง column =========================================*/
+.form.column{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* สร้าง 2 คอลัมน์ที่มีความกว้างเท่ากัน */
+  column-gap: 50px;
+}
+/* group input ที่มากว่า 1 ช่องขึ้นไป */
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px; /* ระยะห่างระหว่าง input ทั้งสอง */
+}
+/*input ช่องกรอกข้อมูล*/
+.input-channel {
+  width: 100%; /*ให้ขนาดเต็มพื้นที่จอ*/
+  height: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+/*input filed วันที่ */
+.coverage_date{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+/*============================ สร้าง form สอง column =========================================*/
+
+
+
+
+
+
+
+

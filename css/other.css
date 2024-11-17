@@ -1,0 +1,248 @@
+/*========================== หัวข้อหลัก =========================================*/
+.title {
+  text-align: center;
+  /*ทําให้อักษรอยู่ตรงกลาง*/
+  background: #6ea6df;
+  /*ใส่สีพื้นหลัง*/
+}
+
+.title h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+/*========================== หัวข้อหลัก =========================================*/
+
+/*============================ button ปุ่มค้นหา =========================================*/
+
+/* button ปุ่มค้าหา ปุ่มที่1*/
+.search1 {
+  width: 100%;
+  max-width: 170px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4467bc;
+  /* สีพื้นหลังของปุ่ม */
+  color: white;
+  /* สีข้อความของปุ่ม */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search1:hover {
+  background-color: #365799;
+  /* สีพื้นหลังของปุ่มเมื่อ hover */
+}
+
+/* button ปุ่มค้าหา ปุ่มที่2*/
+.search2 {
+  width: 100%;
+  max-width: 170px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #629fb6;
+  /* สีพื้นหลังของปุ่ม */
+  color: white;
+  /* สีข้อความของปุ่ม */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search2:hover {
+  background-color: #365799;
+  /* สีพื้นหลังของปุ่มเมื่อ hover */
+}
+
+/*============================ button ปุ่มค้นหา =========================================*/
+
+/*============================ button ปุ่มตรวจสอบ=========================================*/
+.button_group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Space between buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  /* Text color (white) */
+}
+
+.btn.check {
+  background-color: #007bff;
+  /* Blue button */
+}
+
+.btn.cancel {
+  background-color: #dc3545;
+  /* Red button */
+}
+
+.btn:hover {
+  opacity: 0.8;
+  /* Slight transparency effect on hover */
+}
+
+/*============================ button ปุ่มตรวจสอบ=========================================*/
+
+/*============================ กล่อง หมายเหตุ textarea  =========================================*/
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  /* Light gray border */
+  font-size: 1rem;
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  resize: vertical;
+  /* Allow vertical resizing only */
+}
+
+/* Placeholder styling */
+textarea::placeholder {
+  color: #888;
+  /* Gray placeholder text color */
+}
+
+.input_field.full_width {
+  grid-column: 1 / -1;
+  /* This makes the element span from the first column to the last */
+}
+
+/*============================ กล่อง หมายเหตุ =========================================*/
+
+
+/*============================ ขีดเส้น เเบ่งหน้า=========================================*/
+.line {
+  /*ขีดสีฟ้า*/
+  border: none;
+  /* Remove the default border */
+  height: 2px;
+  /* Set the thickness of the line */
+  background-color: #007bff;
+  /* Set the color of the line (blue in this case) */
+  margin: 0px 0;
+  /* Add some space above and below the line */
+}
+
+.line.grey {
+  /*ขีดสีเทา*/
+  background-color: #888;
+  ;
+  height: 0.5px;
+}
+
+/*============================ ขีดเส้น เเบ่งหน้า=========================================*/
+
+/*============================ ปุ่ม checkbox วงกลม =========================================*/
+.checkbox_group {
+  width: 100%;
+}
+
+/* The container */
+.container-checkbox {
+
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*============================ ปุ่ม checkbox วงกลม =========================================*/
+
+/*============================ อื่นๆ =========================================*/
+.agent_code {
+  color: red;
+  width: 100%;
+}
+.chip_tote{
+  color: red;
+  width: 100%;
+}
+
+
+
+/* field input ประเภทกรมธรรม์  */
+.input-channel.dharmakrom_type {
+  font-size: 13px;
+  width: 200px;
+  /* กําหนดไม่ให้ยาวเพื่อความสวยงาน */
+}
+
+/*ขีดระหว่าง inputs field */
+.input-group .dash {
+  margin: 5px 5px 0px 5px;
+  /* ปรับระยะห่างของขีดกลาง */
+  font-size: 18px;
+  /* ปรับขนาดของขีดกลางให้ใหญ่ขึ้น */
+  color: #365799;
+  /* สีของขีดกลาง */
+}
+
+
+/*============================ อื่นๆ =========================================*/

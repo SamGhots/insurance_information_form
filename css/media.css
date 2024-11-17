@@ -1,0 +1,109 @@
+/*==================section-p1===================================== */
+/* Section padding for different screen sizes */
+.section-p1 {
+  padding: 20px 80px;
+}
+
+
+@media (max-width: 968px) {
+  .section-p1 {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-p1 {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .section-p1 {
+    padding: 10px 10px;
+  }
+}
+/*==================section-p1===================================== */
+/*==================wrapper===================================== */
+.wrapper {
+  padding: 20px 0px 0px 80px;
+  /* ใส่ padding ให้ ขยับเนื้อหาเข้าข้างใน จะเเสดงเฉพาะขนาด หน้าจอ 1024px ขึ้นไป*/
+}
+
+@media (max-width: 1067px) {
+  .wrapper {
+    padding: 20px 0px 0px 40px;
+    
+  }
+}
+@media (max-width: 1027px) {
+  .wrapper {
+    padding: 20px 0px 0px 10px;
+    
+  }
+}
+@media (max-width: 997px) {
+  .wrapper {
+    padding: 20px 0px 0px 0px;
+    
+  }
+}
+
+/*==================wrapper===================================== */
+
+
+
+
+@media (max-width: 988px) {
+  .coverage_date{
+    font-size: 11px !important ;
+  }
+}
+@media (max-width: 927px) {
+  .policy_type {
+    width: 100% !important;
+}
+}
+
+@media (max-width: 885px) {
+  .form.column{
+    display: grid;
+    grid-template-columns: 1fr !important ; 
+  
+  }
+
+}
+
+@media (max-width: 685px) {
+  .custom_select.column {
+    flex-direction: column;
+  }
+.input_field.gap{
+  margin-bottom: 69px !important;
+}
+.search1{
+  max-width: 1000px !important;
+}
+.search2{
+  max-width: 1000px !important;
+}
+.input-channel.dharmakrom_type{
+  width: 100% !important;
+}
+.title h2 {
+  font-size: 20px;
+}
+.input-group{
+  gap: 0px !important;
+}
+.wrapper .form .input_field label {
+  width: 150px !important;
+}
+}
+@media (max-width: 396px) {
+  .coverage_date{
+    font-size: 8px !important;
+  }
+  .wrapper .form .input_field label {
+    width: 140px !important;
+}
+}

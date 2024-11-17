@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From</title>
+    <!--======= CSS ======= -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <!--=======font-awesome =======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--ข้อมูลประกันภัยรถยนต์-->
+    <div class="container section-p1">
+      <div class="title">
+        <h2>ข้อมูลประกันภัยรถยนต์</h2>
+      </div>
+      <div class="wrapper">
+        <div class="form">
+          <!-- input 1 -->
+          <div class="input_field">
+            <label for="">รหัสตัวแทน*</label>
+            <span class="agent_code">03351-41 Bruce Wayne</span>
+          </div>
+          <!-- input 1 -->
+          <!-- input 2 -->
+          <div class="input_field gap">
+            <label for="">บริษัทประกัน*</label>
+            <div class="custom_select column" style="gap: 10px;">
+              <select
+                class="insurance_company"
+                name="insurance_company"
+                id="insurance_company"
+              >
+                <option value="">-- เลือกบริษัทประกัน --</option>
+                <option value="option1">บริษัทประกัน A</option>
+                <option value="option2">บริษัทประกัน B</option>
+                <option value="option3">บริษัทประกัน C</option>
+              </select>
+          <button class="search1 ">
+            <i class="fa-solid fa-magnifying-glass"></i
+            >ค้นหาข้อมูลประกันดีดี
+          </button>
+          <button class="search2 ">
+            <i class="fa-solid fa-magnifying-glass"></i>ค้นหาข้อมูลดวงเจริญ
+          </button>
+         
+            </div>
+          </div>
+          <!-- input 2 -->
+          <!-- input 3 -->
+          <div class="input_field">
+            <label for="">ประเภท*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">-- ประเภทประกัน --</option>
+                <option value="car">ประกันภัยรถยนต์</option>
+                <option value="health">ประกันสุขภาพ</option>
+                <option value="life">ประกันชีวิต</option>
+                <option value="accident">ประกันอุบัติเหตุ</option>
+                <option value="property">ประกันทรัพย์สิน</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <!-- input 4 -->
+          <div class="input_field">
+            <label for="">เเพ็คเกจ*</label>
+            <div class="custom_select">
+              <select class="type" name="type" id="type">
+                <option value="">-- เเพ็คเกจ --</option>
+                <option value="option1">ประเภท 1</option>
+                <option value="option2">ประเภท 2</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 4 -->
+          <!-- input 5 -->
+          <div class="input_field">
+            <label for="policy_type">ประเภทกรมธรรม์*</label>
+            <div class="custom_select column">
+              <select class="policy_type" style="width: 20%;" name="policy_type" id="policy_type">
+                <option value="">-- กรรมธรรม์ใหม่ --</option>
+                <option value="option1">ประกันภัยรถยนต์</option>
+                <option value="option2">ประกันสุขภาพ</option>
+                <option value="option3">ประกันชีวิต</option>
+                <option value="option4">ประกันอุบัติเหตุ</option>
+                <option value="option5">ประกันทรัพย์สิน</option>
+              </select>
+              <input
+                type="text"
+                class="input-channel dharmakrom_type"
+                placeholder="กรณีต่ออายุเลขกรมธรรม์เดิม"
+              />
+            </div>
+          </div>
+
+          <!-- input 5 -->
+        </div>
+      </div>
+    </div>
+    <!--ข้อมูลรถยนต์-->
+    <div class="container section-p1">
+      <div class="title">
+        <h2>ข้อมูลรถยนต์</h2>
+      </div>
+      <div class="wrapper">
+        <div class="form column">
+          <!-- input 1 -->
+          <div class="input_field">
+            <label for="">ยี่ห้อรถ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">-- ยี่ห้อรถ --</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+                <option value="mazda">Mazda</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes-Benz</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 1 -->
+          <!-- input 2 -->
+          <div class="input_field">
+            <label for="">รุ่นรถ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">-- รุ่นรถ</option>
+                <option value="camry">Toyota Camry</option>
+                <option value="civic">Honda Civic</option>
+                <option value="altima">Nissan Altima</option>
+                <option value="mazda3">Mazda 3</option>
+                <option value="series3">BMW Series 3</option>
+                <option value="cclass">Mercedes-Benz C-Class</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 2 -->
+          <!-- input 3-->
+          <div class="input_field">
+            <label for="">ทะเบียนรถ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">-- ป้ายปกติ --</option>
+                <option value="standard">ป้ายปกติ</option>
+                <option value="special">ป้ายพิเศษ</option>
+                <option value="temporary">ป้ายชั่วคราว</option>
+              </select>
+              <div class="input-group">
+                <input class="input-channel" type="text" placeholder="" />
+                <span class="dash">-</span>
+                <input class="input-channel" type="text" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- input 3 -->
+          <!-- input 4-->
+          <div class="input_field">
+            <label for="">ทะเบียนจังหวัด*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="bangkok">กรุงเทพมหานคร</option>
+                <option value="chiangmai">เชียงใหม่</option>
+                <option value="phuket">ภูเก็ต</option>
+                <option value="chonburi">ชลบุรี</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 4 -->
+          <!-- input 5-->
+          <div class="input_field">
+            <label for="">ประเภทใช้รถ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input 5 -->
+          <!-- input 6-->
+          <div class="input_field">
+            <label for="">เลขตัวถังรถ*</label>
+            <input class="input-channel" type="text" placeholder="" />
+          </div>
+          <!-- input 6 -->
+          <!-- input 7-->
+          <div class="input_field">
+            <label for="">ปีรถ*/ซีซี*</label>
+
+            <div class="input-group">
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="ระบุปี ค.ศ"
+              />
+              <input class="input-channel " type="text" placeholder="ซีซี" />
+            </div>
+          </div>
+          <!-- input 7 -->
+          <!-- input 8-->
+          <div class="input_field">
+            <label for="">ที่นั่ง*/นํ้าหนัก</label>
+
+            <div class="input-group">
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="ที่นั่ง"
+              />
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="นํ้าหนัก"
+              />
+            </div>
+          </div>
+          <!-- input 8 -->
+        </div>
+      </div>
+    </div>
+   
+    <!--รายละเอียดวันคุ้มครอง เบี้ยประกันภัย-->
+    <div class="container section-p1">
+      <div class="title">
+        <h2>รายละเอียดวันคุ้มครอง เบี้ยประกันภัย</h2>
+      </div>
+      <div class="wrapper">
+        <div class="form column">
+          <!-- input 1 -->
+          <div class="input_field">
+            <label for="coverage_date">วันที่คุ้มครอง*</label>
+            <div class="custom_select">
+              <input
+                type="date"
+                class="coverage_date"
+                name="coverage_date"
+                id="coverage_date"
+                required
+              />
+            </div>
+          </div>
+          <!-- input 1 -->
+          <!-- input 2 -->
+          <div class="input_field">
+            <label for="">วันที่สินสุด*</label>
+            <div class="custom_select">
+              <input
+                type="date"
+                class="coverage_date"
+                name="coverage_date"
+                id="coverage_date"
+                required
+              />
+            </div>
+          </div>
+          <!-- input 2 -->
+          <!-- input 3 -->
+          <div class="input_field">
+            <label for="">เบี้ยสุทธิ</label>
+            <input class="input-channel" type="text" placeholder="0.00" />
+          </div>
+          <!-- input 3 -->
+          <!-- input 4-->
+          <div class="input_field">
+            <label for="">ภาษี</label>
+            <input class="input-channel" type="text" placeholder="0.00" />
+          </div>
+          <!-- input 4 -->
+          <!-- input 5-->
+          <div class="input_field">
+            <label for="">อากร</label>
+            <input class="input-channel" type="text" placeholder="0.00" />
+          </div>
+
+          <!-- input 5 -->
+          <!-- input 6-->
+          <div class="input_field">
+            <label for="">เบี้ยประกันรวม</label>
+            <span class="chip_tote">0.00</span>
+          </div>
+
+          <!-- input 6-->
+          <!-- input 7-->
+          <div class="input_field">
+            <label for="payment_type">ประเภทชำระเงิน</label>
+            <div class="checkbox_group">
+              <label class="container-checkbox"
+                >เต็มจํานวน
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+              
+            </div>
+
+            <!-- input 7-->
+          </div>
+        </div>
+      </div>
+    </div>
+     
+      <!--ผู้เอาประกันภัย -->
+    <div class="container section-p1" style="padding-bottom: 0px">
+      <div class="title">
+        <h2>
+          ผู้เอาประกันภัย ช่องไหนไม่มีโปรดเว้นว่างไว้ห้ามใส่เครื่องหมาย -(ขีด)
+        </h2>
+      </div>
+      <div class="wrapper">
+        <div class="form column">
+          <!-- input1 --->
+          <div class="input_field">
+            <label for="">ประเภทบุคคล*</label>
+            <div class="custom_select">
+              <select class="" name="" id="">
+                <option value="">บุคคลธรรมดา</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+                <option value="mazda">Mazda</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes-Benz</option>
+              </select>
+            </div>
+          </div>
+          <!-- input1 --->
+          <!-- input2 --->
+          <div class="input_field">
+            <label for="">ประเภทบัตร</label>
+
+            <div class="input-group">
+              <div class="custom_select">        <select class="" name="" id="">
+                <option value="">บัตรประชาชน</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+                <option value="mazda">Mazda</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes-Benz</option>
+              </select>
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="เลขที่บัตร"
+              /> </div>
+      
+            </div>
+          </div>
+          <!-- input2 --->
+          <!-- input3 --->
+          <div class="input_field">
+            <label for="">คํานําหน้า*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">-- คํานําหน้า --</option>
+              </select>
+            </div>
+          </div>
+          <!-- input3 --->
+          <!-- input4 --->
+          <div class="input_field">
+            <label for="">เพศ*/วันเกิด*</label>
+            <div class="checkbox_group">
+              <div class="input-group">
+                <!-- Gender Selection -->
+                <div class="checkbox_group">
+                  <label id="male-label">
+                    <input type="radio" name="gender" value="male" id="male" />
+                    ชาย
+                  </label>
+                  <label id="female-label">
+                    <input type="radio" name="gender" value="female" id="female" />
+                    หญิง
+                  </label>
+                </div>
+                <div class="custom_select">
+                  <input
+                    type="date"
+                    class="coverage_date"
+                    name="coverage_date"
+                    id="coverage_date"
+                    required=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- input5-->
+          <div class="input_field">
+            <label for="">ชื่อผู้เอาประกัน*</label>
+            <input
+              class="input-channel"
+              type="text"
+              placeholder="ชื่อผู้เอาประกัน"
+            />
+          </div>
+          <!-- input5-->
+          <!-- input6-->
+          <div class="input_field">
+            <label for="">นามสกุล*</label>
+            <input
+              class="input-channel"
+              type="text"
+              placeholder="นามสกุลผู้เอาประกัน"
+            />
+          </div>
+          <!-- input6-->
+          <!-- input7-->
+          <div class="input_field">
+            <label for="">ที่อยู่</label>
+
+            <div class="input-group">
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="เลขที่"
+              />
+              <input
+                class="input-channel "
+                type="text"
+                placeholder="หมู่ที่"
+              />
+            </div>
+          </div>
+          <!-- input7-->
+          <!-- input8-->
+          <div class="input_field">
+            <label for="">หมู่บ้าน/อาคาร</label>
+            <input
+              class="input-channel"
+              type="text"
+              placeholder="หมู่บ้าน/อาคาร"
+            />
+          </div>
+          <!-- input8-->
+          <!-- input9-->
+          <div class="input_field">
+            <label for="">ซอย</label>
+            <input class="input-channel" type="text" placeholder="ซอย" />
+          </div>
+          <!-- input9-->
+          <!-- input10-->
+          <div class="input_field">
+            <label for="">ถนน</label>
+            <input class="input-channel" type="text" placeholder="ถนน" />
+          </div>
+          <!-- input10-->
+          <!-- input11-->
+          <div class="input_field">
+            <label for="">จังหวัด</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">จังหวัด</option>
+
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input11-->
+          <!-- input12-->
+          <div class="input_field">
+            <label for="">เขต/อําเภอ</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">--เขต/อําเภอ--</option>
+
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input12-->
+          <!-- input12-->
+          <div class="input_field">
+            <label for="">เเขวง/ตําบล</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">--เเขวง/ตําบล--</option>
+
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input12-->
+          <!-- input13-->
+          <div class="input_field">
+            <label for="">รหัสไปรษณีย์*</label>
+            <input class="input-channel" type="text" placeholder="ถนน" />
+          </div>
+          <!-- input13-->
+          <!-- input14-->
+          <div class="input_field">
+            <label for="">เบอร์มือถือ*</label>
+            <input class="input-channel" type="text" placeholder="เบอร์มือถือ" />
+          </div>
+          <!-- input14-->
+          <!-- input15-->
+          <div class="input_field">
+            <label for="">อีเมล*</label>
+            <input class="input-channel" type="text" placeholder="อีเมล" />
+          </div>
+          <!-- input16-->
+          <div class="input_field">
+            <label for="">ประเทศ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">--ระบุประเทศ--</option>
+
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input16-->
+          <!-- input17-->
+          <div class="input_field">
+            <label for="">สัญชาติ*</label>
+            <div class="custom_select">
+              <select class="type" name="" id="">
+                <option value="">--ระบุกรณ์ใช้หนังสือเดินทาง--</option>
+
+                <option value="personal">ใช้ส่วนบุคคล</option>
+                <option value="commercial">ใช้เพื่อการพาณิชย์</option>
+                <option value="rental">ใช้เพื่อการเช่า</option>
+                <option value="government">ใช้ในหน่วยงานราชการ</option>
+              </select>
+            </div>
+          </div>
+          <!-- input17-->
+        </div>
+      </div>
+    </div>
+    
+      <!-- หมายเหตุ-->
+    <div class="container section-p1" style="padding-top: 0px">
+      <div class="line"></div>
+      <div class="wrapper">
+        <div class="form column">
+          <div class="input_field full_width">
+            <label for="comments" style="    width: 116px;">หมายเหตุ</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder=""
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="line grey"></div>
+      <div class="button_group">
+        <button class="btn check">ตรวจสอบข้อมูล</button>
+        <button class="btn cancel">ยกเลิก</button>
+      </div>
+    </div>
+    <script>
+      function updateGenderLabels() {
+        const maleLabel = document.getElementById('male-label');
+        const femaleLabel = document.getElementById('female-label');
+        const isSmallScreen = window.matchMedia('(max-width: 685px)').matches;
+    
+        if (isSmallScreen) {
+          maleLabel.innerHTML = '<input type="radio" name="gender" value="male" id="male" /> ช';
+          femaleLabel.innerHTML = '<input type="radio" name="gender" value="female" id="female" /> ญ';
+        } else {
+          maleLabel.innerHTML = '<input type="radio" name="gender" value="male" id="male" /> ชาย';
+          femaleLabel.innerHTML = '<input type="radio" name="gender" value="female" id="female" /> หญิง';
+        }
+      }
+    
+      // Run on load
+      updateGenderLabels();
+    
+      // Run on window resize
+      window.addEventListener('resize', updateGenderLabels);
+    </script>
+  </body>
+</html>
